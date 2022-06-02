@@ -35,7 +35,7 @@ public class NuevaPreguntaVen extends JFrame{
 				this.tema.GeneraArreglo();
 			
 		*/
-		
+		 
 		
 		
 		JPanel panel_txt = new JPanel(new GridLayout(2,2));
