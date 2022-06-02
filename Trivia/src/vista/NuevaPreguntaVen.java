@@ -28,12 +28,13 @@ public class NuevaPreguntaVen extends JFrame{
 		//categoria.addCategoria("lal");
 		
 		//prueba para las ComboBox
+		/*
 				this.categoria.addOpcion("categoria 1");
 				this.tema.addOpcion("tema 1");
 				this.categoria.GeneraArreglo();
 				this.tema.GeneraArreglo();
 			
-		
+		*/
 		
 		
 		
@@ -58,7 +59,7 @@ public class NuevaPreguntaVen extends JFrame{
 		Component blank = Box.createRigidArea(new Dimension(10, 10));
 		JLabel lbl_temas = new JLabel(); //falta poner las etiquetas de los temas seleccionados
 		//JComboBox<String> lista_temas = new JComboBox<String>(tema.getOpciones());
-		JComboBox<String> lista_categorias = new JComboBox<String>(categoria.getOpciones());
+		JComboBox<String> lista_categorias = new JComboBox<String>();
 		
 		//panel_tema.add(lista_temas);
 		panel_tema.add(btn_nuevo);
