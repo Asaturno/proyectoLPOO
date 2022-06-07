@@ -2,8 +2,15 @@ package vista;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JTabbedPane;
+
+import vista.formaulario.FormCategoria;
+import vista.reporte.*;
 
 public class FrmPrincipalVen extends JFrame{
+	
+	private JTabbedPane tpnPrincipal;
+	
 	
 public FrmPrincipalVen() {
 	
@@ -17,8 +24,14 @@ public FrmPrincipalVen() {
 }
 
 private void init() {
-	JButton btnGuardar = new JButton("Guardar");
-	this.add(btnGuardar);
+	tpnPrincipal = new JTabbedPane();
+	tpnPrincipal.addTab("Preguntas", new RepoPregunta());
+	tpnPrincipal.addTab("Categorias", new RepoCategoria());
+	tpnPrincipal.addTab("Temas", new RepoTema());
+	tpnPrincipal.addTab("Prueba", new FormCategoria("Alta "));
+	
+	this.getContentPane().add(tpnPrincipal);
+	
 	
 	
 }

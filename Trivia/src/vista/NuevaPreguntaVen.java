@@ -15,12 +15,11 @@ import javax.swing.JTextField;
 import javax.swing.border.EmptyBorder;
 
 import modelo.Categoria;
-import modelo.Lista;
+
 
 public class NuevaPreguntaVen extends JFrame{
 	//private Categoria categoria;
-	private Lista categoria; 
-	private Lista tema;
+
 	
 	public NuevaPreguntaVen() {
 		
@@ -58,7 +57,7 @@ public class NuevaPreguntaVen extends JFrame{
 		JButton btn_nuevo = new JButton("+");
 		Component blank = Box.createRigidArea(new Dimension(10, 10));
 		JLabel lbl_temas = new JLabel(); //falta poner las etiquetas de los temas seleccionados
-		//JComboBox<String> lista_temas = new JComboBox<String>(tema.getOpciones());
+		JComboBox<String> lista_temas = new JComboBox<String>();
 		JComboBox<String> lista_categorias = new JComboBox<String>();
 		
 		//panel_tema.add(lista_temas);
@@ -73,7 +72,7 @@ public class NuevaPreguntaVen extends JFrame{
 	
 	public static void main(String[] args) {
 		
-		//prueba para la ComboBox
+		
 		
 		
 		
