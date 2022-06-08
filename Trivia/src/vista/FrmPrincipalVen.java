@@ -36,8 +36,8 @@ public class FrmPrincipalVen extends JFrame implements ActionListener{
 		
 		tpnPrincipal = new JTabbedPane();
 		tpnPrincipal.addTab("Preguntas", new RepoPregunta(this));
-		tpnPrincipal.addTab("Categorias", new RepoCategoria());
-		tpnPrincipal.addTab("Temas", new RepoTema());
+		tpnPrincipal.addTab("Categorias", new RepoCategoria(this));
+		tpnPrincipal.addTab("Temas", new RepoTema(this));
 		
 		this.getContentPane().add(tpnPrincipal);
 		
