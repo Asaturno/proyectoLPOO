@@ -7,12 +7,8 @@ import vista.formaulario.FormPregunta;
 
 public class Trivia {
 	
-	
-
-	
-	
 	public static void main(String arg[]) {
-		new FrmPrincipalVen().setVisible(true);
+		new FrmPrincipalVen().setVisible(true);;
 		
 	}
 
