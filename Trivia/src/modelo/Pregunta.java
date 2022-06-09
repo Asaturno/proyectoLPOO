@@ -8,6 +8,7 @@ public class Pregunta implements PreguntaDao{
 	private String respuesta;
 	private Categoria categoria;
 	private ArrayList<Tema> temas;
+	private List<String> preguntas;
 	
 	public String getPregunta() {
 		return pregunta;
@@ -21,7 +22,6 @@ public class Pregunta implements PreguntaDao{
 	}
 	@Override
 	public void addPregunta(Pregunta pregunta) {
-		// TODO Auto-generated method stub
 		
 	}
 	@Override
@@ -30,7 +30,7 @@ public class Pregunta implements PreguntaDao{
 		return false;
 	}
 	@Override
-	public List<Pregunta> readTotal() {
+	public List<String> readTotal() {
 		// TODO Auto-generated method stub
 		return null;
 	}

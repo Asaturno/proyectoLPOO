@@ -4,6 +4,7 @@ import java.util.List;
 public class Categoria implements CategoriasDao{
 	
 	private String nomCategoria;
+	private List<String> categorias;
 
 	public String getNomCategoria() {
 		return nomCategoria;
@@ -15,32 +16,31 @@ public class Categoria implements CategoriasDao{
 
 	@Override
 	public void addCategoria(Categoria categoria) {
-		// TODO Auto-generated method stub
-		
+		categorias.add(categoria.nomCategoria);
 	}
 
 	@Override
 	public boolean readCategoria(Categoria categoria) {
-		// TODO Auto-generated method stub
+		if(categorias.contains(categoria.nomCategoria)) {
+			return true;
+		}
 		return false;
 	}
 
 	@Override
-	public List<Categoria> listaCategorias() {
-		// TODO Auto-generated method stub
-		return null;
+	public List<String> listaCategorias() {
+		return categorias;
 	}
 
 	@Override
 	public void deleteCategoria(Categoria categoria) {
-		// TODO Auto-generated method stub
-		
+		categorias.remove(categoria.nomCategoria);
 	}
 
 	@Override
 	public void updateCategoria(Categoria categoria1, Categoria categoria2) {
-		// TODO Auto-generated method stub
-		
+		categorias.remove(categoria1.nomCategoria);
+		categorias.add(categoria2.nomCategoria);
 	}
 
 }

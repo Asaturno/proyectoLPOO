@@ -2,7 +2,7 @@ package modelo;
 
 import java.util.List;
 
-public class Tema implements TemasDao{
+public class Tema implements TemasDao {
 	private String nomTema;
 	private List<String> temas;
 
@@ -21,29 +21,26 @@ public class Tema implements TemasDao{
 
 	@Override
 	public boolean readTema(Tema tema) {
-		for(int i=0; i<temas.size(); i++) {
-			if(tema.nomTema.equals(tema)) {
-				return true;
-			}
+		if (temas.contains(tema.nomTema)) {
+			return true;
 		}
 		return false;
 	}
 
 	@Override
-	public List<Tema> listaTemas() {
-		// TODO Auto-generated method stub
-		return null;
+	public List<String> listaTemas() {
+		return temas;
 	}
 
 	@Override
 	public void deleteTema(Tema tema) {
-		// TODO Auto-generated method stub
-		
+		temas.remove(tema.nomTema);
 	}
 
 	@Override
 	public void updateTema(Tema tema1, Tema tema2) {
-		// TODO Auto-generated method stub
-		
+		temas.remove(tema1.nomTema);
+		temas.add(tema2.nomTema);
+
 	}
 }
