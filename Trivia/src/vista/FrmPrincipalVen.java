@@ -18,6 +18,8 @@ public class FrmPrincipalVen extends JFrame implements ActionListener{
 	
 	private JTabbedPane tpnPrincipal;
 	private DlgAltaPregunta venAltaPregunta;
+	private DlgAltaCategoria venAltaCategoria;
+	private DlgAltaTema venAltaTema;
 	
 	public FrmPrincipalVen() {
 		
@@ -51,6 +53,12 @@ public class FrmPrincipalVen extends JFrame implements ActionListener{
 		switch(comando) {
 			case Comandos.VEN_ALTA_PREGUNTA:
 				this.venAltaPregunta.setVisible(true);
+				break;
+			case Comandos.VEN_ALTA_CATEGORIA:
+				this.venAltaCategoria.setVisible(true);
+				break;
+			case Comandos.VEN_ALTA_TEMA:
+				this.venAltaTema.setVisible(true);
 				break;
 		}
 	}

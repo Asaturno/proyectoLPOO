@@ -16,7 +16,7 @@ public class DlgAltaPregunta extends JDialog{
 		
 		this.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
 		this.setLocationRelativeTo(parent);
-		this.setSize(500, 400);
+		this.setSize(500, 200);
 		
 		this.init();
 	}
